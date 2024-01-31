@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../tyylit/style.css">
+    <link rel="stylesheet" href="../tyylit/laurincss.css">
+    
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+    
+    <div class="container.d-flex col-12 text-center">
+
+        <!--dark mode-->       
+        <div class="theme-switcher">           
+          <input type="checkbox" id="switcher">
+          <label for="switcher">Switch</label>
+        </div>
+
+        <!--navbar-->
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar" style="background-color: rgba(250, 242, 232, 0.298);">
+            <a href="../index.html" class="navbar-brand"><img src="../kuvat/meme.png" alt="kiisu" height="60"
+              class="d-inline-block aling top"/>Study Group 8 Tietomaa</a>
+            <button
+              class="navbar-toggler collapsed d-flex d-lg-none flex-colum justify-content-around"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#toggleMobileMenu"
+              aria-controls="toggleMobileMenu"
+              aria-expanded="false"
+              aria-label="toggle navigation"
+            >
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+              <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav text-center">
+                  <li>
+                      <a class="nav-link" href="../index.html">Koti</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="../sivut/netanvisa.html">Matikkamaailma</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="../sivut/Galin.html">Retkeilyvisa</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="../sivut/akinvisa.html">Kertotaulukisa</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="../sivut/LauriVisa.html">Maantietovisa</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="../sivut/tietoja.html">Tietoja</a>
+                  </li>
+                </ul>
+              </div>
+           </nav>
+        </div> 
+
+      <!--Nav loppu-->
+
+      <!-- muiden visoihin linkit -->
+      <div class="row">
+        <div class="col-3">
+          <a href="akinvisa.html">
+            <img src="../kuvat/akilammas.png" id="visabor"></a>
+          <a href="Galin.html">
+              <img src="../kuvat/Retkeily/kumppari.jpg" id="visabor"></a>
+          <a href="LauriVisa.html">
+            <img src="../kuvat/Lauribaa.png" id="visabor"></a>
+          <a href="netanvisa.html">
+            <img src="../kuvat/netanbaa.png" id="visabor"></a>
+        </div>
+
+        <!--Tehtäväosio-->
+
+      <div class="col-6 justify-content-center">
+      <form id="quiz-form">
+          <!--Visa1-->
+          <div class="visakohta1" id="question1">
+            <h3>Tehtävä 1</h3>
+            <p>Mikä on Italian pääkaupunki?</p>
+            <img src="../kuvat/Italia.png" height="250" width="250"><br>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="tehtava1" id="a" value="rooma">
+              <label class="form-check-label" for="tehtava1-vaihtoehto1">
+                  Rooma
+              </label>
+              <br>
+              <input class="form-check-input" type="radio" name="tehtava1" id="b" value="vienna">
+              <label class="form-check-label" for="tehtava1-vaihtoehto2">
+                  Vienna
+              </label>
+              <br>
+              <input class="form-check-input" type="radio" name="tehtava1" id="c" value="Ankara">
+              <label class="form-check-label" for="tehtava1-vaihtoehto3">
+                  Ankara
+              </label>
+              <br>
+              <input class="form-check-input" type="radio" name="tehtava1" id="d" value="Ateena">
+              <label class="form-check-label" for="tehtava1-vaihtoehto4">
+                  Ateena
+              </label>
+              <br>
+              <input class="form-check-input" type="radio" name="tehtava1" id="e" value="madrid">
+              <label class="form-check-label" for="tehtava1-vaihtoehto5">
+                  Madrid
+              </label>
+            </div>
+            <button type="submit">Vastaa</button>
+          </div>
+
+        <!--Visa2-->
+
+        <div class="visakohta2" id="question2">        
+          <h3>Tehtävä 2</h3>
+          <p>Mikä valtio on kyseessä?</p>
+          <img src="../kuvat/maa.JPG"><br>
+          <div class="form-check">
+              <input class="form-check-input" type="radio" name="tehtava2" id="a" value="Italia">
+              <label class="form-check-label" for="question2-option1">
+                  Italia
+              </label><br>
+              
+              <input class="form-check-input" type="radio" name="tehtava2" id="b" value="saksa">
+              <label class="form-check-label" for="question2-option2">
+                  Saksa
+              </label><br>
+              
+              <input class="form-check-input" type="radio" name="tehtava2" id="c" value="Puola">
+              <label class="form-check-label" for="question2-option3">
+                  Puola
+              </label><br>
+              
+              <input class="form-check-input" type="radio" name="tehtava2" id="d" value="Malta">
+              <label class="form-check-label" for="question2-option4">
+                  Malta
+              </label><br>
+              
+              <input class="form-check-input" type="radio" name="tehtava2" id="e" value="Norja">
+              <label class="form-check-label" for="question2-option5">
+                  Norja
+              </label><br>
+          </div>
+          <button type="submit">Vastaa</button>
+        </div>
+
+        <!--Visa3-->
+
+        <div class="visakohta3" id="question3">
+          <h3>Tehtävä 3</h3>
+          <p>Missä on maailman syvin kohta?</p>
+          <img src="../kuvat/vesi.jpg"><br>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tehtava3" id="a" value="everest">
+            <label class="form-check-label" for="everest">
+              Mt. Everest     
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tehtava3" id="b" value="tongan">
+            <label class="form-check-label" for="tongan">
+              Tongan hauta   
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tehtava3" id="c" value="bermuuda">
+            <label class="form-check-label" for="bermuuda">
+              Bermuudan kolmio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tehtava3" id="d" value="marianas">
+            <label class="form-check-label" for="marianas">
+              Mariaanien hauta
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tehtava3" id="e" value="Iso hautavajoama">
+            <label class="form-check-label" for="k2">
+              Iso hautavajoama
+            </label>
+          </div>
+          <button type="submit">Vastaa</button>
+        </div>
+
+        <!--Visa4-->
+
+        <div class="visakohta4" id="question4">
+          <h3>Tehtävä 4</h3>
+          <p>Mikä on maailman pisin joki?</p>
+          <img src="../kuvat/joki.jpg" height="250" width="400"><br>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tehtava4" id="a" value="Loire">
+            <label class="form-check-label" for="joki1">
+              Loire
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tehtava4" id="b" value="niili">
+            <label class="form-check-label" for="joki2">
+              Niili
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tehtava4" id="c" value="Seine">
+            <label class="form-check-label" for="joki3">
+              Seine
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tehtava4" id="d" value="Volga">
+            <label class="form-check-label" for="joki4">
+              Volga
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tehtava4" id="e" value="Gauja">
+            <label class="form-check-label" for="joki5">
+              Gauja
+            </label>
+          </div>
+          <button type="submit">Vastaa</button>
+        </div>
+
+        <!--Visa5-->
+
+        <div class="visakohta5" id="question5">
+          <h3>Tehtävä 5</h3>
+          <p>Maailman pienin valtio</p>
+          <img src="../kuvat/kaupunki.png" height="250"><br>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tehtava5" id="a" value="Lichenstein">
+            <label class="form-check-label" for="maa1">Lichenstein</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tehtava5" id="b" value="Alankomaat">
+            <label class="form-check-label" for="maa2">Alankomaat</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tehtava5" id="c" value="vatikaanivaltio">
+            <label class="form-check-label" for="maa3">Vatikaanivaltio</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tehtava5" id="d" value="Iso-Britannia">
+            <label class="form-check-label" for="maa4">Iso-Britannia</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="tehtava5" id="e" value="Yhdysvallat">
+            <label class="form-check-label" for="maa5">Yhdysvallat</label>
+          </div>
+          <button type="submit">Vastaa</button>
+        </div>
+          
+
+        <!--Visatulokset-->
+
+        <div id="scorescreen">
+          <img src="../kuvat/welldone.png">
+          <h3>Hienoa</h3>
+          <div id="results-container">
+          </div>
+        </div>
+
+      </form>
+      </div>
+    </div>
+  </div>
+
+  <!--Alareunan lampaat-->
+
+    <div class="row">
+      <div class="col-12">
+        <footer id="sheeps">
+          <img src="../kuvat/netanbaa.png" height="100" id="firstbaa">
+          <img src="../kuvat/Retkeily/kumppari.jpg" height="100" id="secondbaa">
+          <img src="../kuvat/Lauribaa.png" height="100" id="thirdbaa">
+          <img src="../kuvat/akilammas.png" height="100" id="fourthbaa">
+        </footer>
+        <footer class="bg-light text-center text-lg-start">
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-dark">Study Group 8 / 101</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+      </div>
+    </div>
+    
+  </div>
+    <!--sisältöosio\-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="../js/Itkonen.js" async defer></script>
+    <script src="../js/java.js" defer></script>
+    
+</body>
+</html>

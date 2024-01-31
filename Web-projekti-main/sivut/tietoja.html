@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../tyylit/style.css" />
+    <link rel="stylesheet" href="../tyylit/tietoja.css" />
+
+    <title>Tietoja</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- TÄMÄ VAIN KOPIOIDAAN OMAAN VISAN POHJAKSI JA TEHDÄÄN OMAT HALUAMAT MUUTOKSET  -->
+  </head>
+  <body>
+    <!--sisältöosio-->
+    <div class="container.d-flex col-12 text-center">
+      <div class="row">
+        <div class="col-11">
+          <nav
+            class="navbar navbar-expand-lg navbar navbar-light"
+            style="background-color: rgba(240, 214, 253, 0.444)"
+          >
+            <a href="../index.html" class="navbar-brand"
+              ><img
+                src="../kuvat/meme.png"
+                alt="kiisu"
+                height="60"
+                class="d-inline-block aling top"
+              />Study Group 8 Tietomaa</a
+            >
+            <button
+              class="navbar-toggler collapsed d-flex d-lg-none flex-colum justify-content-around"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#toggleMobileMenu"
+              aria-controls="toggleMobileMenu"
+              aria-expanded="false"
+              aria-label="toggle navigation"
+            >
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+              <ul class="navbar-nav text-center">
+                <li>
+                  <a class="nav-link" href="../index.html">Koti</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="../sivut/netanvisa.html"
+                    >Matikkamaailma</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" href="../sivut/Galin.html"
+                    >Retkeilyvisa</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" href="../sivut/akinvisa.html"
+                    >Kertotaulukisa</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" href="../sivut/LauriVisa.html"
+                    >Maantietovisa</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-link" href="../sivut/tietoja.html">Tietoja</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-1">
+          <div class="theme-switcher">
+            <input type="checkbox" id="switcher" />
+            <label for="switcher">Switch</label>
+          </div>
+        </div>
+      </div>
+      <!--NavBar ENDS-->
+      <div class="row">
+        <div class="col-12">
+          <!-- KIRJOITTAKAA OMAAAN OSIOON TIETOJA JUTTU -->
+          <div class="row">
+            <div class="col" id="info">
+              AKI <br />
+              <p>
+                Heippa!<br />
+                Olen Kertotaulukisalammas Aki. Sivustoltani löydät
+                kertotaulupelin aikaa vastaan joka laskee pisteet ja tallentaa
+                parhaimman tuloksen selaimen muistiin, niin voit kisata kaverin
+                kanssa kuka tekee parhaimman tuloksen. Verkkosivunkehityksessä
+                suunnittelimme ryhmä kanssa yhdessä sivuston ulkoasun ja miltä
+                se näyttää pääpiirteittäin. Tein sivuston taustan animoinnin ja
+                rakensin sivustolle navbarin ja toimivan light/dark-moden.
+              </p>
+              <img src="../kuvat/akilammas.png" style="height: 80px" id="aki" />
+            </div>
+            <div class="col" id="info">
+              LAURI <br />
+              Hei, olen maantietolammas eli Lauri. Minun visasivulta löytyy
+              maantieteisiin liittyviä kysymyksiä, jotka alakoululaiset oppivat
+              koulussa. Ryhmän verkkosivun tekemisessä olin mukana indexin
+              menussa, poluissa ja yhtesissä koodien kirjoitus palavereissa.
+              Hoidin myös github valmennusta sen käytöstä. <br />
+              <img
+                src="../kuvat/Lauribaa.png"
+                style="height: 80px"
+                id="lauri"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" id="info">
+              NICHOLAS <br />
+              <p>
+                Hei lukija, Olen retki lammas eli Nicholas ja olen tehnyt
+                retkeily visan, jossa kysytään alkeellisia kysymyksiä Suomen
+                luonnosta ja mitä siellä käytetään. Olin itse tekemässä visaa
+                paljon, sekä navbaria mitä käytetään nettisivulla. Sieltä voi mm
+                mennä eri visoihin nopeasti. Suunnittelut ja palaverit
+                onnistuivat mielestäni loistavasti palaverit olivat etänä, että
+                kasvotusten.
+              </p>
+              <img
+                src="../kuvat/Retkeily/kumppari.jpg"
+                style="height: 80px"
+                id="nicholas"
+              />
+            </div>
+            <div class="col" id="info">
+              NETTA <br />
+              <p>
+                Hei, olen matikkalammas eli Netta. Sivustoltani löytyy murto- ja
+                prosenttilukuja jotka soveltuvat parhaiten 5-6. luokkalaisille.
+                Verkkosivun kehityksessä vastasin footerin animoinnista,
+                ryhmäpalaverien järjestämisestä, yhteisten koodien
+                tarkastamista/kehitystä sekä niiden asettelusta. Tietoja sekä
+                Etusivun tyylit ovat myös minun tekemäni.
+              </p>
+              <img
+                src="../kuvat/netanbaa.png"
+                style="height: 80px"
+                id="netta"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <footer id="sheeps">
+            <img src="../kuvat/Lauribaa.png" height="100" id="firstbaa" />
+            <img
+              src="../kuvat/Retkeily/kumppari.jpg"
+              height="100"
+              id="secondbaa"
+            />
+            <img src="../kuvat/akilammas.png" height="100" id="thirdbaa" />
+            <img src="../kuvat/netanbaa.png" height="100" id="fourthbaa" />
+          </footer>
+          <footer class="bg-light text-center text-lg-start">
+            <!-- Copyright -->
+            <div
+              class="text-center p-3"
+              style="background-color: rgba(0, 0, 0, 0.2)"
+            >
+              © 2023 Copyright:
+              <a class="text-dark">Study Group 8 / 101</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/java.js" async defer></script>
+  </body>
+</html>

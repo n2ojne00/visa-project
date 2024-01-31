@@ -1,0 +1,237 @@
+button {
+  background-color: rgb(253, 60, 85);
+  color: rgb(248, 223, 190);
+  border-color: rgb(111, 3, 1);
+}
+button:hover {
+  background-color: rgb(193, 43, 63);
+}
+#nextpage {
+  margin-top: 20px;
+}
+
+/*VISA ALUEIDEN/TULOSTAULUKON TYYLIT BEGIN*/
+.col-3 {
+  margin-top: 80px;
+  border: solid rgb(195, 181, 164) 2px;
+  border-radius: 90px 70px 90px 0px;
+  background-color: rgb(250, 242, 232);
+  height: 200px;
+  box-shadow: 5px 8px #36363644;
+}
+.visa {
+  border: solid rgb(195, 181, 164) 2px;
+  padding: 30px;
+  background-color: rgb(250, 242, 232);
+  border-radius: 5px;
+}
+.col-7 {
+  margin-top: 20px;
+}
+/*VISA ALUEIDEN/TULOSTAULUKON TYYLIT END */
+
+/* TUMMAN TEEMAN ASETUS BEGIN*/
+body[data-theme="dark"] .col-3 {
+  background-color: rgb(34, 74, 110);
+  box-shadow: 5px 8px rgba(85, 85, 85, 0.226);
+}
+body[data-theme="dark"] .visa {
+  background-color: rgb(34, 74, 110);
+}
+body[data-theme="dark"] button {
+  background-color: rgb(15, 59, 97);
+  border-color: rgb(25, 95, 157);
+}
+body[data-theme="dark"] button:hover {
+  background-color: rgb(10, 43, 72);
+}
+body[data-theme="dark"] r {
+  background-color: rgb(10, 43, 72);
+}
+/*TUMMAN TEEMAN ASETUS END*/
+
+/*sivunumeron astettelu BEGIN*/
+r {
+  background-color: rgb(253, 248, 242);
+  padding: 10px;
+  position: relative;
+  left: 45%;
+  width: 7vw;
+  height: 7vw;
+}
+/*sivunumeron astettelu END*/
+
+/*Murtoluku ympyrän lähdekoodi löytyi: https://stackoverflow.com/questions/21205652/how-to-draw-a-circle-sector-in-css*/
+pie {
+  position: absolute;
+  margin: 2%;
+  left: 20%;
+  width: 7vw;
+  height: 7vw;
+  display: block;
+  border-radius: 50%;
+  background-color: rgb(26, 235, 162);
+  border: 2px solid rgb(10, 152, 102);
+}
+
+.secondpie {
+  background-image: linear-gradient(
+      90deg,
+      transparent 50%,
+      rgb(26, 235, 162) 50%
+    ),
+    linear-gradient(180deg, white, 50%, transparent 50%);
+}
+/*Murtoluku ympyrä END*/
+
+/*Tehtävien vastaus vaihtoehtojen tyyliasetuksia BEGIN*/
+
+li {
+  list-style: none;
+}
+
+math {
+  padding-bottom: 10px;
+}
+
+#visa4 > li > math {
+  margin: 10px;
+  background-color: rgba(194, 154, 255, 0.53);
+  padding: 10px;
+  color: black;
+  font-size: 26px;
+}
+
+#visa4 > li > b,
+#visa4 > li > input {
+  margin: 5px;
+}
+
+.auto {
+  box-shadow: 5px 5px 5px 5px #3636360f;
+  display: inline-block;
+}
+
+#explanation3 > img {
+  border-radius: 50%;
+  width: 7vw;
+  height: 7vw;
+}
+
+b {
+  margin-right: 10px;
+}
+
+#food {
+  font-size: 20px;
+}
+
+#followresults {
+  margin-top: 10%;
+}
+/*Tehtävien vastausosioiden tyyliasetuksia END*/
+
+/*YKSI VISA NÄKYVILLÄ BEGIN*/
+.active {
+  display: block;
+  overflow: hidden;
+}
+
+.hidden#visa1 {
+  display: none;
+  position: relative;
+  width: 55vw;
+  height: 100%;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+  position: absolute;
+  width: 55vw;
+  height: 100%;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+}
+/*YKSI VISA NÄKYVILLÄ END*/
+
+/*ERIKOKOISTEN RUUTUJEN RESPONSIIVISUUS*/
+
+@media screen and (max-width: 1195px) {
+  .col-2,
+  .auto {
+    /*piilotetaanko jo isommalla ruudulla*/
+    display: none;
+  }
+
+  .col-3 {
+    background-color: rgba(65, 105, 225, 0);
+    border: none;
+    box-shadow: none;
+    font-size: 3vw;
+  }
+
+  body[data-theme="dark"] .col-3 {
+    background-color: rgba(34, 74, 110, 0);
+    box-shadow: none;
+  }
+
+  .visa > h3,
+  .visa > li,
+  .visa > h4 {
+    font-size: 3vw;
+  }
+
+  #nextpage {
+    background-image: url(../kuvat/nextarrow.png);
+    background-size: 6vw;
+    background-repeat: no-repeat;
+    font-size: 0;
+    height: 6vw;
+    width: 7vw;
+  }
+
+  r {
+    background-color: rgba(250, 235, 215, 0);
+  }
+
+  #bucket {
+    height: 30vw;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #welcomepage > h2,
+  .col-1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #welcomepage > h2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .col-2,
+  .auto,
+  #welcomepage > h2 {
+    display: none;
+  }
+  .col-3 {
+    position: sticky;
+  }
+  #welcomepage > h3,
+  #welcomepage > h4 {
+    font-size: 4vw;
+  }
+  .visa > h3,
+  .visa > li,
+  .visa > h4 {
+    font-size: 4vw;
+  }
+}

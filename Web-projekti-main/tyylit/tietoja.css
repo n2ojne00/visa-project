@@ -1,0 +1,43 @@
+.row {
+  font-size: 22px;
+}
+
+#info {
+  border: solid 2px rgba(240, 214, 253, 0.822);
+  background-color: rgba(240, 214, 253, 0.444);
+  padding: 3vw;
+  margin: 2vw;
+  border-radius: 20px 100px 20px 100px;
+  box-shadow: 6px 6px 8px 8px rgba(230, 230, 230, 0.25);
+}
+
+img#aki,
+img#lauri,
+img#nicholas,
+img#netta {
+  float: right;
+}
+
+@media screen and (max-width: 1000px) {
+  #info {
+    font-size: 2.5vw;
+  }
+  img#lauri,
+  img#nicholas,
+  img#netta {
+    height: 3vw;
+  }
+}
+@media screen and (max-width: 750px) {
+  .col-1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 620px) {
+  #info {
+    font-size: 5vw;
+  }
+  /*img#aki,*/ /*img#lauri, img#nicholas, img#netta {
+    
+  }*/
+}

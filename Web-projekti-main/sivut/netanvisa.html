@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../tyylit/style.css">
+    <link rel="stylesheet" href="../tyylit/netancss.css"> 
+
+    <title>Matikkamaailma</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+</head>
+<body>
+  
+  <div class="container.d-flex col-12 text-center">
+
+    <div class="row">
+    <!--NavBar BEGIN-->
+     <div class="col-11">
+      <nav class="navbar navbar-expand-lg navbar" style="background-color: rgba(250, 242, 232, 0.298);">
+        <a href="../index.html" class="navbar-brand"><img src="../kuvat/meme.png" alt="kiisu" height="60"
+          class="d-inline-block aling top"/>Study Group 8 Tietomaa</a>
+        <button
+          class="navbar-toggler collapsed d-flex d-lg-none flex-colum justify-content-around"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#toggleMobileMenu"
+          aria-controls="toggleMobileMenu"
+          aria-expanded="false"
+          aria-label="toggle navigation">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav text-center">
+              <li>
+                  <a class="nav-link" href="../index.html">Koti</a>
+              </li>
+              <li>
+                <a class="nav-link" href="../sivut/netanvisa.html">Matikkamaailma</a>
+              </li>
+              <li>
+                <a class="nav-link" href="../sivut/Galin.html">Retkeilyvisa</a>
+              </li>
+              <li>
+                <a class="nav-link" href="../sivut/akinvisa.html">Kertotaulukisa</a>
+              </li>
+              <li>
+                <a class="nav-link" href="../sivut/LauriVisa.html">Maantietovisa</a>
+              </li>
+              <li>
+                <a class="nav-link" href="../sivut/tietoja.html">Tietoja</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+     </div>
+    <!--NavBar END-->
+
+
+    <!--DARK MODE BUTTON-->
+      <div class="col-1">
+        <div class="theme-switcher">
+          <input type="checkbox" id="switcher">
+          <label for="switcher">Switch</label>
+        </div> 
+      </div>
+    <!--DARK MODE BUTTON END-->
+      
+     
+    </div>
+
+    <!-- MUIDEN VISOJEN LINKKEIHIN BEGIN -->
+      <div class="row"> 
+        <div class="col-2">
+          <a href="akinvisa.html">
+            <img src="../kuvat/akilammas.png" id="visabor"></a>
+          <a href="Galin.html">
+              <img src="../kuvat/Retkeily/kumppari.jpg" id="visabor"></a>
+          <a href="LauriVisa.html">
+            <img src="../kuvat/Lauribaa.png" id="visabor"></a>
+          <a href="netanvisa.html">
+            <img src="../kuvat/netanbaa.png" id="visabor"></a>
+        </div>
+    <!-- MUIDEN VISOJEN LINKKEIHIN END -->
+
+    <!-- NETAN VISA CONTENT -->
+        <div class="col-7"> 
+          <div id="welcomepage" class="visa active">
+            <h2>Matikkamaailma</h2>
+            <h3>Tämä visa sisältää viisi kysymystä murto- ja prosenttilaskuista. Voit vastata ja tarkistaa kysymyksen vain kerran joten mieti vastauksesi tarkkaan. Vastaamatta jättäminen luetaan vastaukseksi ja et saa pistettä.</h3>
+            <h4>Taitoa ja tietoa matkaan!</h4>
+          </div>
+
+           <!-- TEHTÄVÄ 1 -->
+
+          <div class="visa hidden" id="visa1">
+        
+            <h3>Tehtävä 1</h3>
+              <button onclick="firstquestion()">Tehtävän tulostus</button> 
+              <h3><div id="food"></h3> <!-- Javascript tulostaa kysymyksen tähän -->
+             
+              <img src="../kuvat/markkinoillavalmis.png" alt="" height="280" id="bucket">
+               
+              <h4>Valitse oikea litra määrä leivälle: </h4>
+              <li><b>A</b><input type="radio" id="radio1" name="radAnswer"><a id="visa1answer1"></a></li>
+              <li><b>B</b><input type="radio" id="radio2" name="radAnswer"><a id="visa1answer2"></a></li>
+              <li><b>C</b><input type="radio" id="radio3" name="radAnswer"><a id="visa1answer3"></a></li>
+              <li><b>D</b><input type="radio" id="radio4" name="radAnswer"><a id="visa1answer4"></a></li> 
+            
+            <button onclick="checkfirst()">Tarkista</button> <!-- Tehtävän tarkistus -->
+            <div id="resultvisa1"></div> <!-- Oikein / väärin -->
+            <div id="explanation1"></div> <!-- Mikä olisi ollut oikea vastaus -->
+            <r>VISA 1/5</r>
+          </div>
+ 
+          <!-- TEHTÄVÄ 2 -->
+
+          <div class="visa hidden" id="visa2">
+            <h3>Tehtävä 2</h3>
+            <h4>Valitse murtoluku mistä voidaan muodostaa kokonaisluku.</h4>
+            <li>
+              <b>A</b><input type="radio" id="visafirst" name="radAnswer">
+              <math id="numbertwo">
+                <mrow>
+                  <mfrac>
+                    <mi>26</mi>
+                    <mi>4</mi>
+                  </mfrac>
+                </mrow>
+              </math>
+            </li>
+            <li>
+              <b>B</b><input type="radio" id="visasecond" name="radAnswer">
+              <math id="numbertwo">
+                <mrow>
+                  <mfrac>
+                    <mi>67</mi>
+                    <mi>9</mi>
+                  </mfrac>
+                </mrow>
+              </math>
+            </li>
+            <li>
+              <b>C</b><input type="radio" id="visathird" name="radAnswer">
+              <math id="numbertwo">
+                <mrow>
+                  <mfrac>
+                    <mi>14</mi>
+                    <mi>8</mi>
+                  </mfrac>
+                </mrow>
+              </math>
+            </li>
+            <li>
+              <b>D</b><input type="radio" id="visafourth" name="radAnswer">
+              <math id="numbertwo">
+                <mrow>
+                  <mfrac>
+                    <mi>49</mi>
+                    <mi>7</mi>
+                  </mfrac>
+                </mrow>
+              </math>
+            </li>
+            </ol>
+
+            <button onclick="checksecond()">Tarkista</button>
+            <div id="resultvisa2"></div>
+            <div id="explanation2"></div>
+            <r>VISA 2/5</r>
+            
+          </div>
+
+          <!-- TEHTÄVÄ 3 -->
+
+          <div class="visa hidden" id="visa3">
+            <h3>Tehtävä 3</h3>
+            <h4>Valitse sopiva prosenttiluku mikä vastaa ympyrän vihreää aluetta.</h4>
+
+            <pie class="secondpie"></pie>
+
+            <ol>
+              <li><b>A</b><input type="radio" id="pick1" name="radAnswer">50 %</li>
+              <li><b>B</b><input type="radio" id="pick2" name="radAnswer">25 %</li>
+              <li><b>C</b><input type="radio" id="pick3" name="radAnswer">20 %</li>
+              <li><b>D</b><input type="radio" id="pick4" name="radAnswer">75 %</li>
+            </ol>
+        
+            <button onclick="checkthird()">Tarkista</button>
+            <div id="resultvisa3"></div>
+            <div id="explanation3"></div>
+            <r>VISA 3/5</r>
+            
+          </div>
+          
+          <!-- TEHTÄVÄ 4 -->
+
+          <div class="visa hidden" id="visa4">
+            <h3>Tehtävä 4</h3>
+            <h4>Valitse isoin murtoluku.</h4>
+            <li>
+              <b>A</b><input type="radio" id="buttonfirst" name="radAnswer">
+              <math id="first">
+                <mrow>
+                 <mfrac>
+                  <mi>7</mi>
+                  <mi>9</mi>
+                 </mfrac>
+                </mrow>
+               </math>
+            </li>
+            <li>
+                <b>B</b><input type="radio" id="buttonsecond" name="radAnswer">
+               <math id="second">
+                <mrow>
+                 <mfrac>
+                  <mi>3</mi>
+                  <mi>6</mi>
+                 </mfrac>
+                </mrow>
+               </math>
+            </li>
+            <li>
+                <b>C</b><input type="radio" id="buttonthird" name="radAnswer">
+               <math id="third">
+                <mrow>
+                 <mfrac>
+                  <mi>10</mi>
+                  <mi>100</mi>
+                 </mfrac>
+                </mrow>
+               </math>
+            </li>
+            <li>
+                <b>D</b><input type="radio" id="buttonfourth" name="radAnswer"> 
+                <math id="fourth">
+                <mrow>
+                 <mfrac>
+                  <mi>2</mi>
+                  <mi>5</mi>
+                 </mfrac>
+                </mrow>
+               </math>
+            </li>
+
+            <button onclick="checkfourth()">Tarkista</button>
+            <div id="resultvisa4"></div>
+            <div id="explanation4"></div>
+            <r>VISA 4/5</r>
+            
+          </div>
+          
+          <!-- TEHTÄVÄ 5 -->
+
+          <div class="visa hidden" id="visa5">
+            <h3>Tehtävä 5</h3>
+
+              <h4>Farmari oli lähdössä markkinoille myymään lampaitaan mutta autossa onkin liian vähän lampaita. Autossa piti olla 16 lammasta mutta 4 on karkuteillä. Valitse sopiva prosenttimäärä siihen kuinka monta lammasta on karannut.</h4> <br>
+              <div class="auto">
+                <img src="../kuvat/sheepandfarmer.jpg" alt="" style="height: 200px;" >
+              </div> <br>
+             <li>
+              <b>A</b><input type="radio" id="firstfifth" name="radAnswer"> 30% 
+             </li>
+             <li> 
+              <b>B</b><input type="radio" id="secondfifth" name="radAnswer"> 35% 
+             </li> 
+             <li> 
+              <b>C</b><input type="radio" id="thirdfifth" name="radAnswer"> 25%
+             </li> 
+             <li> 
+              <b>D</b><input type="radio" id="fourthfifth" name="radAnswer"> 20%
+             </li>
+
+              <button onclick="checkfifth()">Tarkista</button>
+              <div id="resultvisa5"></div>
+              <div id="explanation5"></div>
+              <r>VISA 5/5</r>
+
+          </div>
+
+          <!-- LOPPUSANAT -->
+
+          <div class="visa hidden" id="visa6">
+           
+              <h1>Kysymykset loppuivat. Testaahan taitojasi myös muissa sivun visoissa.</h1>
+              <h2>Visojen tekijöistä voit käydä lukemassa <a class="link" href="../sivut/tietoja.html" style="text-decoration: none;">Tietoja</a> osiosta.</h2>
+              <h2>Matikkamaailman kuvat ovat <a class="link" href="https://pixabay.com/" style="text-decoration: none;">Pixabaysta</a> haettuja ja Netta Ojalan muokkaamia.</h2>
+
+          </div>
+        </div>
+
+    <!--TULOKSET JA SEURAAVAN SIVUN NÄPPÄIN-->
+        <div class="col-3">
+          <t>Tuloksesi</t>
+          <div id="followresults"></div>
+
+          <button id="nextpage" onclick="nextpage()">Seuraava tehtävä</button>
+        </div>
+
+
+      </div>
+      
+    <!--FOOTER BEGIN-->
+      <div class="row">
+        <div class="col-12">
+          <footer id="sheeps">
+            <img src="../kuvat/netanbaa.png" height="100" id="firstbaa">
+            <img src="../kuvat/Retkeily/kumppari.jpg" height="100" id="secondbaa">
+            <img src="../kuvat/Lauribaa.png" height="100" id="thirdbaa">
+            <img src="../kuvat/akilammas.png" height="100" id="fourthbaa">
+          </footer>
+          <footer class="bg-light text-center text-lg-start">
+          <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+              <a class="text-dark">Study Group 8 / 101</a>
+            </div>
+          <!-- Copyright -->
+          </footer>
+        </div>
+      </div>
+    <!--FOOTER END-->
+    
+  </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="../js/netanjavas.js"></script>
+    <script src="../js/java.js" async defer></script>
+    
+</body>
+</html>

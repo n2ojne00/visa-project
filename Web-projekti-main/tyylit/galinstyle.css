@@ -1,0 +1,297 @@
+/* koodataan UI visalle. */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+/* kaikki ID merkataan CSS puolella # merkillä */
+
+div#quiz.quiz-container {
+  position: relative;
+  left: auto;
+}
+
+#quiz {
+  background-color: #9a4cdf;
+  background-image: linear-gradient(315deg, #eeebf1 0%, #7f11e0 100%);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 50vh;
+  overflow: hidden;
+  margin: 0;
+  background-image: url(../kuvat/Retkeily/luonto.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+/*Visan koko alue*/
+.quiz-container {
+  background-color: transparent;
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1); */
+  width: 600px;
+  overflow: hidden;
+  display: inline-block;
+  justify-content: center;
+}
+
+.quiz-header {
+  padding: 20rem;
+  background-image: url(../kuvat/Retkeily/Trangia.jpg);
+  background-size: cover;
+  border: 2px solid #7462ff;
+  height: 5rem;
+  width: 5rem;
+  color: #fff;
+  justify-content: center;
+}
+
+h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  justify-content: center;
+}
+
+/*Visan teksti*/
+
+h2#question {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+  height: 29rem;
+  position: absolute;
+  color: #ffffff;
+}
+
+/*Visan näyttö asettelu*/
+
+ul#quizscreen {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  position: absolute;
+  right: 400px;
+  top: 150px;
+}
+
+/*Visan kysymykset (li muodossa eli ns taulukko)*/
+
+ul#quizscreen li {
+  /* font-size: 1.2em; */
+  margin: 1rem 0;
+  background: linear-gradient(45deg, #000000, #5a4747, #000301);
+  animation: color 12s ease-in-out infinite;
+  color: #fff;
+}
+
+ul#quizscreen li label {
+  cursor: pointer;
+  position: center;
+  display: inline;
+}
+
+button {
+  background-color: #9967c2;
+  color: #fff;
+  border: initial;
+  display: block;
+  width: 75%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 1.3rem;
+}
+
+button:hover {
+  background-color: #9c24cc;
+}
+button:focus {
+  outline: none;
+  background-color: #44b927;
+}
+
+@media screen and (max-width: 768px) {
+  div.col-3 {
+    display: none;
+  }
+
+  div.col-12 {
+    position: relative;
+    top: 50px;
+  }
+
+  div.col-9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* set height to 100% to center vertically */
+    width: 70%;
+  }
+
+  ul#quizscreen {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    right: 350px;
+    top: 100px;
+  }
+
+  h2#question {
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+    height: 29rem;
+    top: 30%;
+    left: 35%;
+    position: absolute;
+    color: #ffffff;
+  }
+
+  button {
+    background-color: #9967c2;
+    color: #fff;
+    border: initial;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+    height: 10%;
+    position: absolute;
+    top: 100%;
+    left: 90%;
+    transform: translateX(-50%);
+  }
+
+  .col-2,
+  .auto,
+  #secondbaa,
+  #thirdbaa {
+    /*piilotetaanko jo isommalla ruudulla*/
+    display: none;
+  }
+  .col-3 {
+    background-color: rgba(65, 105, 225, 0);
+    border: none;
+    box-shadow: none;
+  }
+  #nextpage {
+    background-image: url(../kuvat/nextarrow.png);
+    background-size: 6vw;
+    background-repeat: no-repeat;
+    color: rgba(240, 248, 255, 0);
+    height: 6vw;
+    width: 7vw;
+  }
+  r {
+    background-color: rgba(250, 235, 215, 0);
+  }
+  #bucket {
+    height: 30vw;
+  }
+
+  nav.navbar.navbar-expand-Ig {
+    display: hidden;
+  }
+  div.container.d-flex-col-12.text-center {
+    height: fit-content;
+    width: fit-content;
+  }
+
+  div#quiz.quiz-container {
+    height: 500px;
+    width: 500px;
+  }
+
+  button#submit {
+    right: auto;
+  }
+}
+/*PUHELIN RESPONSIIVINEN*/
+@media screen and (max-width: 480px) {
+  .col-2,
+  .auto,
+  #secondbaa,
+  #thirdbaa,
+  #fourthbaa {
+    /*piilotetaanko jo isommalla ruudulla*/
+    display: none;
+  }
+
+  div.col-3 {
+    display: none;
+  }
+  div.col-9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  button {
+    background-color: #9967c2;
+    color: #fff;
+    border: initial;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+    height: 10%;
+    top: 100%;
+    left: 90%;
+    transform: translateX(-50%);
+  }
+
+  ul#quizscreen {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    right: 350px;
+    top: 100px;
+  }
+
+  h2#question {
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+    height: 29rem;
+    position: absolute;
+    color: #ffffff;
+    top: 30%;
+    left: 35%;
+  }
+
+  #firstbaa {
+    position: relative;
+    animation: linear infinite;
+    animation-name: run;
+    animation-duration: 5s;
+  }
+  @keyframes run {
+    0% {
+      left: -30%;
+    }
+    49% {
+      transform: scaleX(1);
+    }
+    50% {
+      left: 30%;
+      transform: scaleX(-1);
+    }
+    100% {
+      left: -30%;
+      transform: scaleX(-1);
+    }
+  }
+}
